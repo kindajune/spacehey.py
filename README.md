@@ -14,7 +14,7 @@ This library provides two clients:
 Currently available via Git:
 
 ```bash
-pip install git https://github.com/kindajune/spacehey.py.git
+pip install spacehey.py
 
 ```
 
