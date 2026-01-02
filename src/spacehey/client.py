@@ -29,7 +29,7 @@ class MobileClient(HTTPClient):
     def _im_request(self, data):
         """internal helper for the IM api (using mobile token auth)."""
         # im api is separate from the main v1 api, so we request it directly
-        # assuming it accepts the same Bearer token structure as the main API
+
         try:
             resp = self.session.post(self.IM_API_URL, data=data, headers=self.api_headers)
             resp.raise_for_status()
@@ -177,7 +177,7 @@ class MobileClient(HTTPClient):
         return self._api_call("POST", "/bulletins/new", files=files)
 
     def delete_bulletin(self, bulletin_id):
-        # API dump suggests DELETE method on ID
+
         return self._api_call("DELETE", f"/bulletins/{bulletin_id}")
 
     # --- Blogs ---
@@ -221,3 +221,4 @@ class MobileClient(HTTPClient):
         
     def logout(self):
         return self._api_call("POST", "/auth/invalidate")
+
