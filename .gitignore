@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+dist/
+build/
+*.egg-info/
+.env
+test_profile.py
+example.py
+test.py
+spacehey_error_log.html
+spacehey_export.json
+spacehey_links.txt
+deep_scan.txt
+all_links.txt
+site/
