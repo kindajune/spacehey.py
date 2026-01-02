@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spacehey.py"
+version = "1.0.0"
+description = "Unofficial python wrapper for Spacehey"
+authors = [
+  { name="kindajune", email="1kindajune@gmail.com" },
+]
+dependencies = [
+  "requests",
+  "beautifulsoup4", 
+]
+requires-python = ">=3.8"
+
+[project.urls]
+"Homepage" = "https://github.com/kindajune/spacehey.py"
